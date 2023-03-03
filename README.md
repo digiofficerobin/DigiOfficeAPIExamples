@@ -11,15 +11,15 @@ The client credentials flow is the preferred authentication method for daemon se
 
 The following configuration information is required before you can use this example:
 
-// Client Credentials Configuration
-var config = new AuthenticationConfig()
-{
-	ClientID = "<guid>",
-	ClientSecret = "<secretstring>",
-	TenantID = "<guid>",
-	DigiOfficeAPIGatewayUrl = @"<digiofficeapigatewayurl>",
-	ApiUri = "<appuri>"
-};
+	// Client Credentials Configuration
+	var config = new AuthenticationConfig()
+	{
+		ClientID = "<guid>",
+		ClientSecret = "<secretstring>",
+		TenantID = "<guid>",
+		DigiOfficeAPIGatewayUrl = @"<digiofficeapigatewayurl>",
+		ApiUri = "<appuri>"
+	};
 
 This configuration information should be requested by a consultant of DigiOffice. The consultant contacts with the system and application department of the customer site to register the application in their DigiOffice and Azure Active Directory environment.
 
@@ -33,16 +33,16 @@ Remark: The daemon service client can only authenticate with ID tokens and not w
 
 The following configuration information is required before you can use this example:
 
-// ROPC flow Configuration
-var config = new AuthenticationConfig()
-{
-	ClientID = "<guid>",
-	Username = "<usernamne>",
-	Password = "<password>",
-	TenantID = "<tenantid>",
-	DigiOfficeAPIGatewayUrl = @"<digiofficeapigatewayurl>",
-	Scopes = new string[]{ $"user.read" }
-};
+	// ROPC flow Configuration
+	var config = new AuthenticationConfig()
+	{
+		ClientID = "<guid>",
+		Username = "<usernamne>",
+		Password = "<password>",
+		TenantID = "<tenantid>",
+		DigiOfficeAPIGatewayUrl = @"<digiofficeapigatewayurl>",
+		Scopes = new string[]{ $"user.read" }
+	};
 
 ![ClientCredentialsFlow-ROPCflow](https://user-images.githubusercontent.com/16424069/222700432-70e99973-4401-47bc-9ad3-4f980d0116cb.png)
 
