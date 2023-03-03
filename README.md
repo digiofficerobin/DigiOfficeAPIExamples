@@ -1,4 +1,4 @@
-# DigiOfficeAPIExamples
+# DigiOffice API Examples
 
 There are two examples for which a daemon (agent/job) service can get data from the DigiOffice API.
 
