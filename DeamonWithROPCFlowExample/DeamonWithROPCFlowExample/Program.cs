@@ -43,7 +43,7 @@ try
 		var authRequest = new Authenticate
 		{
 			provider = "msalauth",
-			oauth_token = result.IdToken   // Do not confuse with result.AccessToken !!
+			AccessToken = result.IdToken   // Do not confuse with result.AccessToken !!
 		};
 
 		Console.WriteLine("Trying to authenticate on DigiOffice with the ROPC ID token");
