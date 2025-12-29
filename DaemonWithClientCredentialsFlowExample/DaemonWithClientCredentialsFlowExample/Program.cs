@@ -45,7 +45,7 @@ try
 		var authRequest = new Authenticate
 		{
 			provider = "msalauth",
-			oauth_token = result.AccessToken
+			AccessToken = result.AccessToken
 		};
 
 		Console.WriteLine("Trying to authenticate on DigiOffice with the Client-Credentials accesstoken");
